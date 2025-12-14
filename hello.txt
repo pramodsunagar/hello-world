@@ -1,2 +1,3 @@
 Hello, Wellcome to Cloudthat DevOps Training!
-Just a new line 
+Just a new line
+New line from Jump Server 
