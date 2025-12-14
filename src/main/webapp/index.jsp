@@ -10,4 +10,7 @@
 	<p>
 		You are coming from 
 		<%= request.getRemoteAddr()  %></p>
+	<p>
+		DevOps Essentials Project 
+	</p>
 </body>
