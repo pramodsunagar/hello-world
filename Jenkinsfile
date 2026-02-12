@@ -4,7 +4,6 @@ pipeline {
     stage('error') {
       steps {
         echo 'echo \'Building application...\''
-        sleep(time: 10, unit: 'SECONDS')
         echo 'echo \'Running tests...\''
       }
     }
