@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         echo 'echo \'Building application...\''
-        sleep 10
+        sleep(time: 10, unit: 'SECONDS')
         echo 'echo \'Running tests...\''
       }
     }
