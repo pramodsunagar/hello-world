@@ -1,15 +1,17 @@
 pipeline {
-    agent any
-    stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-        stage('Build') {
-            steps {
-                echo 'Building Hello World Project'
-            }
-        }
+  agent any
+  stages {
+    stage('Checkout') {
+      steps {
+        checkout scm
+      }
     }
+
+    stage('Build') {
+      steps {
+        echo 'Building Hello World Project'
+      }
+    }
+
+  }
 }
