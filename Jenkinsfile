@@ -1,15 +1,15 @@
 pipeline {
-  agent any
-  stages {
-    stage('error') {
-      steps {
-        echo 'echo \'Building application...\''
-        echo 'echo \'Running tests...\''
-      }
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building Hello World Project'
+            }
+        }
     }
-
-  }
-  environment {
-    APP_NAME = 'hello_world'
-  }
 }
